@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center; background-color: gainsboro; color: rgb(37, 90, 189)">
+  <b>
+      <span>{{ title }}</span><br>
+      <span>{{titleDesciption}}</span>
+  </b><hr>
+  <img width="25%" alt="Activity logo" src="../assets/images/logo001.jpg">
+</div>
+<div style="text-align:center; background-color: rgb(245, 244, 171)">
+  <agm-map [latitude]="lat1" [longitude]="lng1">
+    <agm-marker [latitude]="lat1" [longitude]="lng1"></agm-marker>
+    <agm-marker [latitude]="lat2" [longitude]="lng2"></agm-marker>
+  </agm-map>
+</div>
+
+
