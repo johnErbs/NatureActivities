@@ -1,0 +1,15 @@
+<div *ngIf="activityroute?.length > 0; else noActivities">
+  <ul *ngFor="let activity of activityroute">
+    <li>
+      Titel: {{activity.title}}<br>
+      Latitude: {{activity.lat}}<br>
+      Longitude: {{activity.lng}}<br>
+      Aktivitet: {{activity.activity}}
+    </li>
+  </ul>
+</div>
+<ng-template #noActivities>
+  <hr>
+  <h5>Der er ingen aktivitets-ruter!</h5>
+  <h5>Indlæser Ruter!</h5>
+</ng-template>
